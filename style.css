@@ -148,3 +148,38 @@ body {
   background: #334155;
   border-radius: 4px;
 }
+/* ===== تصميم متجاوب للموبايل ===== */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    order: 2;
+    display: none; /* نبدأ مخفي ونفتحه بزر لاحقًا */
+  }
+
+  .chat {
+    flex: 1;
+    order: 1;
+    width: 100%;
+  }
+
+  .chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .toggle-users {
+    display: inline-block;
+    cursor: pointer;
+    background: #2563eb;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+}
